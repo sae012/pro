@@ -1,0 +1,13 @@
+6.# Python program to perform different set operations
+
+
+A = {1, 2, 3, 5, 7, 9}
+B = {2, 4, 6, 7, 9, 0}
+# set union operation
+print('Union of A and B:', A | B)
+# set intersection operation
+print('Intersection of A and B:', A & B)
+# set difference operation
+print('Difference of A and B:', A - B)
+# set symmetric difference operation
+print('Symmetric Difference of A and B:', A ^ B)

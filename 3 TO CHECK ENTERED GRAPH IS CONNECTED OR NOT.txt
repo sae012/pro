@@ -1,0 +1,50 @@
+/******************************************************************************
+3.TO CHECK ENTERED GRAPH IS CONNECTED OR NOT
+*******************************************************************************/
+#include <iostream>
+using namespace std;
+int main()
+{
+int vertices;
+static int count;
+cout<<" Enter number of vertices ";
+cin>>vertices;
+int value;
+int adj [vertices] [vertices];
+for(int i=1;i<=vertices;i++){
+for(int j=1;j<=vertices;j++){
+adj[i][j]=0;
+ }
+ }
+cout<<" Inter THe values: ";
+for(int i=1;i<=vertices;i++){
+for(int j=1;j<=vertices;j++){
+cout<<i<<"\t"<<j;
+cin>>value;
+adj[i][j]=value;
+ }
+ }
+for(int i=1;i<=vertices;i++){
+for(int j=1;j<=vertices;j++){
+cout<<adj[i][j]<<"\t";
+ }
+cout<<"\n";
+ }
+for(int i=1;i<=vertices;i++){
+count=0;
+for(int j=1;j<=vertices;j++){
+if(adj[i][j]==0){
+count++;
+ }
+else{
+count=0;
+ }
+ }
+if(count==vertices)
+ {
+cout<<"this is not connected graph";
+break;
+ }
+ }
+return 0;
+}
